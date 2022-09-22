@@ -24,5 +24,35 @@ namespace Lj2Dd1En2
         {
             InitializeComponent();
         }
+
+        // Meal bevat de eigenschappen die over een maaltijd.
+        public class Meal
+        {
+            private int mealId;
+            public int MealId
+            {
+                Get { return mealId; }
+                Set { mealId = value; }
+            }
+            private string name = null!;
+            public string Name
+            {
+                get { return name; }
+                set { name = value; }
+            }
+            private string? description;
+            public string? Description
+            {
+                get { return description; }
+                set { description = value; }
+            }
+            private decimal price;
+            public decimal Price
+            {
+                get { return price; }
+                set { price = value; }
+            }
+        }
+
     }
 }
